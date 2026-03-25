@@ -1,3 +1,7 @@
+// Davi de Souza Almeida (CB 3038734) & Gustavo Cardoso Muniz (CB 3037045)
+// 17. Entrar via teclado com dois valores quaisquer “X” e “Y”. Calcular e exibir o
+// cálculo XY (“X” elevado a “Y”). Pesquisar as funções Exp e Ln.
+
 import java.util.Scanner;
 
 public class Ex17 {
