@@ -1,3 +1,6 @@
+// Davi de Souza Almeida (CB 3038734) & Gustavo Cardoso Muniz (CB 3037045)
+// 6. Calcular e exibir a média aritmética de quatro valores quaisquer que serão digitados.
+
 import java.util.Scanner;
 
 public class Ex6 {
