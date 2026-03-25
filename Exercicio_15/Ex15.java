@@ -1,3 +1,7 @@
+// Davi de Souza Almeida (CB 3038734) & Gustavo Cardoso Muniz (CB 3037045)
+//15. Entrar via teclado com o valor da cotação do dólar e uma certa quantidade de
+//dólares. Calcular e exibir o valor correspondente em Reais (R$).
+
 import java.util.Scanner;
 
 public class Ex15{
