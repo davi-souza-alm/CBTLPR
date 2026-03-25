@@ -1,3 +1,6 @@
+// Davi de Souza Almeida (CB 3038734) & Gustavo Cardoso Muniz (CB 3037045)
+// 11. A partir do diâmetro de um círculo que será digitado, calcular e exibir sua área.
+
 import java.util.Scanner;
 
 public class Ex11{
