@@ -1,3 +1,6 @@
+// Davi de Souza Almeida (CB 3038734) & Gustavo Cardoso Muniz (CB 3037045)
+// 10. Entrar via teclado com o valor de uma temperatura em graus Celsius, calcular e
+// exibir sua temperatura equivalente em Fahrenheit.
 
 import java.util.Scanner;
 
