@@ -1,3 +1,7 @@
+// Davi de Souza Almeida (CB 3038734) & Gustavo Cardoso Muniz (CB 3037045)
+// 16. Entrar via teclado com o valor de um ângulo em graus, calcular e exibir as
+// seguintes funções trigonométricas: seno, cosseno, tangente e secante deste ângulo.
+// Lembre-se que uma função trigonométrica trabalha em radianos.
 
 import java.util.Scanner;
 
