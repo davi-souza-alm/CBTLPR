@@ -1,3 +1,7 @@
+// Davi de Souza Almeida (CB 3038734) & Gustavo Cardoso Muniz (CB 3037045)
+// 9. Calcular e exibir a tensão de um determinado circuito eletrônico a partir dos
+// valores da resistência e corrente elétrica que serão digitados. Utilize a lei de Ohm.
+
 import java.util.Scanner;
 
 public class Ex9 {
