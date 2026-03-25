@@ -1,3 +1,8 @@
+// Davi de Souza Almeida (CB 3038734) & Gustavo Cardoso Muniz (CB 3037045)
+// 18. Entrar via teclado com o valor de cinco produtos. Após as entradas, digitar um
+// valor referente ao pagamento da somatória destes valores. Calcular e exibir o troco
+// que deverá ser devolvido.
+
 import java.util.Scanner;
 
 public class Ex18 {
