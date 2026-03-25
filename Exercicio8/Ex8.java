@@ -1,3 +1,7 @@
+// Davi de Souza Almeida (CB 3038734) & Gustavo Cardoso Muniz (CB 3037045)
+// 8. Sabendo que uma milha marítima equivale a um mil, oitocentos e cinquenta e
+// dois metros e que um quilômetro possui mil metros, fazer um programa para converter milhas marítimas em quilômetros.
+
 import java.util.Scanner;
 
 public class Ex8 {
