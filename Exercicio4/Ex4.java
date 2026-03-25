@@ -1,3 +1,6 @@
+// Davi de Souza Almeida (CB 3038734) & Gustavo Cardoso Muniz (CB 3037045)
+// 4. A partir dos valores da base e altura de um triângulo, calcular e exibir sua área.
+
 import java.util.Scanner;
 public class Ex4 {
 	public static void main(String args[]) {
