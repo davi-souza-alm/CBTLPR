@@ -1,3 +1,6 @@
+// Davi de Souza Almeida (CB 3038734) & Gustavo Cardoso Muniz (CB 3037045)
+// 3. Calcular e exibir a área de um quadrado a partir do valor de sua diagonal que será digitado.
+
 import java.util.Scanner;
 public class Ex3 {
 	public static void main(String[] args) {
