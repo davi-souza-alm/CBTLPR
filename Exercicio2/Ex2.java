@@ -1,3 +1,6 @@
+// Davi de Souza Almeida (CB 3038734) & Gustavo Cardoso Muniz (CB 3037045)
+// 2. Calcular e exibir a área de um quadrado, a partir do valor de sua aresta que será digitado.
+
 import java.util.Scanner;
 public class Ex2 {
 	public static void main(String[] args) {
