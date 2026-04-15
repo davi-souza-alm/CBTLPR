@@ -1,0 +1,38 @@
+// Davi de Souza Almeida (CB3038734)
+/*Entrar com uma matriz de ordem MxN, onde a ordem também será escolhida pelo usuário,
+sendo que no máximo 10x10. A matriz não precisa ser quadrática. Após a digitação dos
+elementos, calcular e exibir a matriz transposta.  */
+
+import java.util.Scanner;
+
+public class Ex9 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int m, n;
+
+        do {
+            System.out.print("Linhas (max 10): ");
+            m = sc.nextInt();
+            System.out.print("Colunas (max 10): ");
+            n = sc.nextInt();
+        } while (m <= 0 || m > 10 || n <= 0 || n > 10);
+
+        int[][] mat = new int[m][n];
+        int[][] t = new int[n][m];
+
+        for (int i = 0; i < m; i++)
+            for (int j = 0; j < n; j++) {
+                System.out.print("Valor: ");
+                mat[i][j] = sc.nextInt();
+                t[j][i] = mat[i][j];
+            }
+
+        System.out.println("Transposta:");
+        for (int[] linha : t) {
+            for (int v : linha)
+                System.out.print(v + " ");
+            System.out.println();
+        }
+    }
+}
