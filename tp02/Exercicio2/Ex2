@@ -1,0 +1,31 @@
+// Davi de Souza Almeida (CB3038734)
+// Entrar via teclado com dez valores positivos. Consistir a digitação e enviar mensagem de
+// erro, se necessário. Após a digitação, exibir:
+// a. O maior valor;
+// b. A soma dos valores;
+// c. A média aritmética dos valores
+
+
+import java.util.Scanner;
+
+public class Ex2 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int valor, soma = 0, maior = Integer.MIN_VALUE;
+
+        for (int i = 0; i < 10; i++) {
+            do {
+                System.out.print("Digite um valor positivo: ");
+                valor = sc.nextInt();
+            } while (valor <= 0);
+
+            soma += valor;
+            if (valor > maior) maior = valor;
+        }
+
+        System.out.println("Maior: " + maior);
+        System.out.println("Soma: " + soma);
+        System.out.println("Média: " + (soma / 10.0));
+    }
+}
