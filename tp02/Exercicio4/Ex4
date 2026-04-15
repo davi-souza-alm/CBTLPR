@@ -1,0 +1,24 @@
+// Davi de Souza Almeida (CB3038734)
+/*Armazenar seis valores em uma matriz de ordem 2x3. Apresentar os valores na tela*/
+
+import java.util.Scanner;
+
+public class Ex4 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int[][] m = new int[2][3];
+
+        for (int i = 0; i < 2; i++)
+            for (int j = 0; j < 3; j++) {
+                System.out.print("Valor: ");
+                m[i][j] = sc.nextInt();
+            }
+
+        for (int[] linha : m) {
+            for (int v : linha)
+                System.out.print(v + " ");
+            System.out.println();
+        }
+    }
+}
