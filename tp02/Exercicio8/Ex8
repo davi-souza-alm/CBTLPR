@@ -1,0 +1,46 @@
+// Davi de Souza Almeida (CB3038734)
+/*Entrar via teclado com doze valores e armazená-los em uma matriz de ordem 3x4. Após a
+digitação dos valores solicitar uma constante multiplicativa, que deverá multiplicar cada
+valor matriz e armazenar o resultado em outra matriz de mesma ordem, nas posições
+correspondentes. Exibir as matrizes na tela, sob a forma matricial, ou seja, linhas por
+colunas.  */
+
+import java.util.Scanner;
+
+public class Ex8 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int[][] m = new int[3][4];
+        int[][] r = new int[3][4];
+
+        for (int i = 0; i < 3; i++)
+            for (int j = 0; j < 4; j++) {
+                System.out.print("Valor: ");
+                m[i][j] = sc.nextInt();
+            }
+
+        System.out.print("Constante: ");
+        int k = sc.nextInt();
+
+        for (int i = 0; i < 3; i++)
+            for (int j = 0; j < 4; j++)
+                r[i][j] = m[i][j] * k;
+
+        System.out.println("Matriz original:");
+        for (int[] linha : m) {
+            for (int v : linha)
+                System.out.print(v + " ");
+            System.out.println();
+        }
+
+        System.out.println("Matriz resultante:");
+        for (int[] linha : r) {
+            for (int v : linha)
+                System.out.print(v + " ");
+            System.out.println();
+        }
+    }
+}
+
+
