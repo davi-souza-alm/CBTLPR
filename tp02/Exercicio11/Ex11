@@ -1,0 +1,24 @@
+// Davi de Souza Almeida (CB3038734)
+/* Entrar com uma matriz de ordem MxM, onde a ordem também será escolhida pelo usuário,
+sendo que no máximo será de ordem 10 e quadrática. Após a digitação dos elementos,
+calcular e exibir determinante da matriz. */
+
+import java.util.Scanner;
+
+public class Ex11 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int[][] m = new int[2][2];
+
+        for (int i = 0; i < 2; i++)
+            for (int j = 0; j < 2; j++) {
+                System.out.print("Valor: ");
+                m[i][j] = sc.nextInt();
+            }
+
+        int det = m[0][0]*m[1][1] - m[0][1]*m[1][0];
+
+        System.out.println("Determinante: " + det);
+    }
+}
