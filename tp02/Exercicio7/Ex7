@@ -1,0 +1,33 @@
+// Davi de Souza Almeida (CB3038734)
+/*Entrar via teclado com doze valores e armazená-los em uma matriz de ordem 3x4. Após a
+digitação dos valores solicitar uma constante multiplicativa, que deverá multiplicar cada
+valor matriz e armazenar o resultado na própria matriz, nas posições correspondentes.  */
+
+import java.util.Scanner;
+
+public class Ex7 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int[][] m = new int[3][4];
+
+        for (int i = 0; i < 3; i++)
+            for (int j = 0; j < 4; j++) {
+                System.out.print("Valor: ");
+                m[i][j] = sc.nextInt();
+            }
+
+        System.out.print("Constante: ");
+        int k = sc.nextInt();
+
+        for (int i = 0; i < 3; i++)
+            for (int j = 0; j < 4; j++)
+                m[i][j] *= k;
+
+        for (int[] linha : m) {
+            for (int v : linha)
+                System.out.print(v + " ");
+            System.out.println();
+        }
+    }
+}
