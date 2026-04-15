@@ -1,0 +1,24 @@
+// Entrar com dois valores via teclado, onde o segundo valor deverá ser maior que o primeiro.
+// Caso contrário solicitar novamente apenas o segundo valor. 
+// Davi de Souza Almeida (CB3038734)
+
+-1 
+import java.util.Scanner;
+
+public class Ex1 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int a, b;
+
+        System.out.print("Digite o primeiro valor: ");
+        a = sc.nextInt();
+
+        do {
+            System.out.print("Digite o segundo valor (maior que o primeiro): ");
+            b = sc.nextInt();
+        } while (b <= a);
+
+        System.out.println("Valores válidos!");
+    }
+}
