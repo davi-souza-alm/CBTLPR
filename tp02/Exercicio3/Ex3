@@ -1,0 +1,60 @@
+// Davi de Souza Almeida (CB3038734)
+/*Entrar via teclado com “N” valores quaisquer. O valor “N” (que representa a quantidade de
+números) será digitado, deverá ser positivo, porém menor que vinte. Caso a quantidade não
+satisfaça a restrição, enviar mensagem de erro e solicitar o valor novamente. Após a
+digitação dos “N” valores, exibir:
+a. O maior valor;
+b. O menor valor;
+c. A soma dos valores;
+d. A média aritmética dos valores;
+e. A porcentagem de valores que são positivos;
+f. A porcentagem de valores negativos;
+Após exibir os dados, perguntar ao usuário de deseja ou não uma nova execução do
+programa. Consistir a resposta no sentido de aceitar somente “S” ou “N” e encerrar o
+programa em função dessa resposta.*/
+
+import java.util.Scanner;
+
+public class Ex3 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        char resp;
+
+        do {
+            int n;
+
+            do {
+                System.out.print("Digite a quantidade (1 a 19): ");
+                n = sc.nextInt();
+            } while (n <= 0 || n >= 20);
+
+            int soma = 0, maior = Integer.MIN_VALUE, menor = Integer.MAX_VALUE;
+            int positivos = 0, negativos = 0;
+
+            for (int i = 0; i < n; i++) {
+                System.out.print("Valor: ");
+                int v = sc.nextInt();
+
+                soma += v;
+                if (v > maior) maior = v;
+                if (v < menor) menor = v;
+
+                if (v >= 0) positivos++;
+                else negativos++;
+            }
+
+            System.out.println("Maior: " + maior);
+            System.out.println("Menor: " + menor);
+            System.out.println("Soma: " + soma);
+            System.out.println("Média: " + (soma / (double)n));
+            System.out.println("% Positivos: " + (positivos * 100.0 / n));
+            System.out.println("% Negativos: " + (negativos * 100.0 / n));
+
+            do {
+                System.out.print("Deseja repetir? (S/N): ");
+                resp = sc.next().toUpperCase().charAt(0);
+            } while (resp != 'S' && resp != 'N');
+
+        } while (resp == 'S');
+    }
+}
