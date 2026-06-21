@@ -1,0 +1,19 @@
+=== CONSULTA P1 ===
+Data: 20/06/2026
+Hora: 10:30:15
+Paciente: Davi
+Medico: Dr. Wellington
+
+=== CONSULTA P2 ===
+Data: 20/06/2026
+Hora: 18:50:40
+Paciente: Davi
+Medico: Wellington Tuller
+
+=== NOVO P1 ===
+Data: 21/06/2026
+Hora: 21:10:05
+Paciente: Davi
+Medico: Arthur
+
+Quantidade final de consultas: 2
